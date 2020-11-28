@@ -70,7 +70,7 @@ An ncnn implementation of YOLOv5 on ARM devices, capable of using GPU to acceler
    cd ncnn
    mkdir -p build-aarch64-linux
    cd build-aarch64-linux
-   cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/aarch64-linux-gnu.toolchain.cmake ..
+   cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/aarch64-linux-gnu.toolchain.cmake –DANDROID=ON ..
    make -j8
    make install
    ```
@@ -141,13 +141,13 @@ An ncnn implementation of YOLOv5 on ARM devices, capable of using GPU to acceler
    source ~/.bashrc
    ```
 
-7. Compile ncnn.
+7. Compile ncnn-vulkan.
 
    ```shell
    cd ncnn
    mkdir -p build-aarch64-linux-vulkan
    cd build-aarch64-linux-vulkan
-   cmake -DNCNN_VULKAN=ON -DCMAKE_TOOLCHAIN_FILE=../toolchains/aarch64-linux-gnu.toolchain.cmake ..
+   cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/aarch64-linux-gnu.toolchain.cmake –DANDROID=ON -DNCNN_VULKAN=ON ..
    make -j8
    make install
    ```
