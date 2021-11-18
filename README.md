@@ -1,4 +1,4 @@
-# YOLOv5 ncnn-ARM
+# YOLOv5-ncnn-arm
 An ncnn implementation of YOLOv5 on ARM devices, capable of using GPU to accelerate inference
 
 ### Environment
